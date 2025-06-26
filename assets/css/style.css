@@ -1,0 +1,514 @@
+/*==========Common CSS Start==========*/
+:root {
+  --primary: #2c861c;
+  --black: #000000;
+  --gray: #545764;
+  --bgColor: #faf8f2;
+  --white: #ffffff;
+  --button: #2c861c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+*::after,
+*::before {
+  transition: all 0.3s ease 0s !important;
+  border: none;
+  -webkit-transition: all 0.3s ease 0s !important;
+  -moz-transition: all 0.3s ease 0s !important;
+  -ms-transition: all 0.3s ease 0s !important;
+  -o-transition: all 0.3s ease 0s !important;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--bgColor);
+  color: var(--black);
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+input,
+input:focus,
+input:hover,
+button,
+button:hover,
+button:focus {
+  outline: none;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+/* custom css */
+
+/*========== Spacing ==========*/
+/* Padding */
+.p-1 {
+  padding: 4px;
+}
+.p-2 {
+  padding: 8px;
+}
+.p-3 {
+  padding: 12px;
+}
+.p-4 {
+  padding: 16px;
+}
+.p-5 {
+  padding: 20px;
+}
+
+/* Margin */
+.m-1 {
+  margin: 4px;
+}
+.m-2 {
+  margin: 8px;
+}
+.m-3 {
+  margin: 12px;
+}
+.m-4 {
+  margin: 16px;
+}
+.m-5 {
+  margin: 20px;
+}
+
+/* Padding (X and Y axis) */
+.px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.px-6 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.py-26 {
+  padding-left: 106px;
+  padding-right: 106px;
+}
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Margin (X and Y axis) */
+.mx-2 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.my-2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/*========== Display ==========*/
+.flex {
+  display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+.flex-col-reverse{
+    flex-direction: column-reverse;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/*========== Flex Justify ==========*/
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/*========== Flex Align Items ==========*/
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-stretch {
+  align-items: stretch;
+}
+
+/*========== Font Size ==========*/
+.text-custom-heading {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 900;
+  letter-spacing: 5%;
+}
+
+.text-64-700-77 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+/* 16px | 400 | 24px */
+.text-16-400-24 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* 16px | 700 | 24px */
+.text-16-700-24 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* 14px | 400 | 21px */
+.text-14-400-21 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* 14px | 700 | 21px */
+.text-14-700-21 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+/* 18px | 400 | 27px */
+.text-18-400-27 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+/* 18px | 700 | 27px */
+.text-18-700-27 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+/* 18px | 500 | 27px | Italic */
+.text-18-500-27-italic {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  font-style: italic;
+}
+
+/* 40px | 700 | 48px */
+.text-40-700-48 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+/*========== Gap ==========*/
+.gap-1 {
+  gap: 4px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-3 {
+  gap: 12px;
+}
+.gap-4 {
+  gap: 16px;
+}
+.gap-5 {
+  gap: 20px;
+}
+
+/*========== Font Weight ==========*/
+.font-thin {
+  font-weight: 100;
+}
+.font-extralight {
+  font-weight: 200;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-black {
+  font-weight: 900;
+}
+
+/*========== Line Height ==========*/
+.leading-none {
+  line-height: 1;
+}
+.leading-tight {
+  line-height: 1.25;
+}
+.leading-snug {
+  line-height: 1.375;
+}
+.leading-normal {
+  line-height: 1.5;
+}
+.leading-relaxed {
+  line-height: 1.625;
+}
+.leading-loose {
+  line-height: 2;
+}
+
+/*========== Letter Spacing ==========*/
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-normal {
+  letter-spacing: 0;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+/*========== Text Align ==========*/
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/*========== Text Transform ==========*/
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.normal-case {
+  text-transform: none;
+}
+
+/*========== Text Decoration ==========*/
+.underline {
+  text-decoration: underline;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.no-underline {
+  text-decoration: none;
+}
+
+/*========== Example Colors (optional) ==========*/
+.text-primary {
+  color: var(--primary);
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-white {
+  color: var(--white);
+}
+.text-black {
+  color: var(--black);
+}
+
+/* Width utilities */
+.w-203 {
+  width: 203px;
+}
+.w-240 {
+  width: 240px;
+}
+.w-300 {
+  width: 300px;
+}
+.w-340 {
+  width: 340px;
+}
+.w-352 {
+  width: 352px;
+}
+.w-400 {
+  width: 400px;
+}
+.w-680 {
+  width: 680px;
+}
+.w-full {
+  width: 100%;
+}
+
+/* Height utilities (same pattern, you can adjust) */
+.h-203 {
+  height: 203px;
+}
+.h-240 {
+  height: 240px;
+}
+.h-300 {
+  height: 300px;
+}
+.h-808 {
+  height: 808px;
+}
+.h-352 {
+  height: 352px;
+}
+.h-400 {
+  height: 400px;
+}
+.h-680 {
+  height: 680px;
+}
+.h-full {
+  height: 100%;
+}
+.h-auto {
+  height: auto;
+}
+
+/* Rotation utility */
+.rotate--90 {
+  transform: rotate(-90deg);
+}
+
+/* Opacity utilities */
+.opacity-10 {
+  opacity: 0.1;
+}
+.opacity-12 {
+  opacity: 0.12;
+}
+.opacity-17 {
+  opacity: 0.17;
+}
+.opacity-full {
+  opacity: 1;
+}
+
+
+
+
+
+/* main css code */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.custom-bg-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px; 
+  width: 100%;
+  height: 1024px !important;
+}
+
