@@ -9,90 +9,411 @@
     <!-- font link -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!--Font Awesome 3Icon CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
 
-    <main class="conteiner flex flex-col justify-center items-center">
-        <div>
-            <div class="flex flex-col justify-center items-center ">
-                <div class="flex items-center justify-center">
-                    <div class="w-203">
-                        <img src="./assets/img/logoWithDesign.png" alt="" class="w-full h-full">
-                    </div>
-                </div>
-                <div class=" opacity-12 custom-bg-wrapper"
-                    style="background-image: url('./assets/img/backgroundImage.jpg'); ">
-                    <!-- <img src="assets/img/backgroundImage.jpg" alt="" class="h-auto w-full opacity-12"> -->
-                    <div class="flex flex-col items-center justify-center opecity-full" style="position: absolute;">
-                        <h4 class="text-custom-heading mb-2" style="color: var(--primary);">The creative impact tour
-                        </h4>
-                        <h1 class="text-64-700-77" style="opacity: 100%;">
-                            Say Yes to Creativity,<br />
-                            Healing, and Community—<br />
-                            for Just $1
-                        </h1>
-                    </div>
-                </div>
 
-                <div style=" bottom: -80%; width: 100%;"
-                    class="flex flex-col items-center justify-center conteiner">
-                    <div style="max-width: 1200px; width: 680px; height: 680px;">
-                        <img src="assets/img/bannerImage.png" alt="Banner Image"
-                            style="width: 100%; height: 100%; object-fit: contain;">
+    <main>
+        <div class="main-body">
+            <div>
+                <nav class="container">
+                    <div class="h-80" style="position: relative;">
+                        <div class="flex items-center justify-center w-full" style="position: absolute; bottom: -4px;">
+                            <div class="h-80 ">
+                                <img src="./assets/img/logoWithDesign.png" alt="Logo" class="w-full h-full">
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <div class="custom-bg-wrapper" style="position: relative; overflow: hidden;">
+                    <!-- Background image with 12% opacity -->
+                    <div
+                        style=" position: absolute;  inset: 0; opacity: 0.12; background-image: url('./assets/img/backgroundImage.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;  z-index: 0;">
                     </div>
 
-                    <div class="px-6 py-26 flex flex-col gap-4 items-center justify-center"
-                        style="max-width: 680px; width: 100%; background-color: white;">
-                        <h4 style="text-align: center; font-weight: 600; font-size: 18px; color: var(--primary);">
+                    <!-- Content on top -->
+                    <div class="container">
+                        <div class="flex flex-col items-center justify-center"
+                            style="gap: 16px; padding-top: 35px; position: relative; z-index: 1; text-align: center;">
+                            <h4 class="text-custom-heading" style="color: var(--primary); text-transform: uppercase;">
+                                The Creative Impact Tour
+                            </h4>
+                            <h1 class="text-64-700-77" style="color: var(--black); max-width: 835px;">
+                                Say Yes To Creativity, Healing, And Community— For <span
+                                    style="color: var(--primary);">$1</span>
+                            </h1>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="container flex flex-col items-center justify-center"
+                    style="margin-top: -600px; max-width: 680px;">
+                    <img src="assets/img/bannerImage.png" alt="Banner Image"
+                        style="width: 100%; height: auto; object-fit: contain;">
+                    <div style="background: var(--white); padding: 32px 24px; width: 100%; max-width: 680px; box-shadow: 0 0 10px rgba(0,0,0,0.1); "
+                        class="flex flex-col gap-4 items-center">
+                        <h4 class="text-18-700-27 text-center" style="color: var(--primary);">
                             Join the group chat for launch day alerts, free writing prompts, and early content from the
                             tour:
                         </h4>
 
                         <input type="text" name="name" placeholder="Full Name"
-                            style="border: 1px solid var(--primary); padding: 12px; width: 80%;  background-color: none;"
-                            class="text-14-400-21" />
+                            style="border: 1px solid var(--primary); padding: 12px; width: 100%; max-width: 500px;"
+                            class="text-14-400-21">
 
                         <input type="email" name="email" placeholder="Your Email Here"
-                            style="border: 1px solid var(--primary); padding: 12px; width: 80%;"
-                            class="text-14-400-21" />
+                            style="border: 1px solid var(--primary); padding: 12px; width: 100%; max-width: 500px;"
+                            class="text-14-400-21">
+
                         <button
-                            style="background-color: var(--primary); color: white; margin-top: 32px; padding: 12px; width: 60%;"
+                            style="background-color: var(--primary); color: white; padding: 12px 24px; width: 60%; max-width: 300px; margin-top: 16px;"
                             class="text-16-400-24">Pledge $1 Now</button>
-                        <p class="text-16-400-24">We keep your info safe. Opt out anytime.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="conteiner">
-                <div>
-                    <div>
-                        <h1>So what is the creative impact tour?</h1>
-                        <p>A nationwide free and low-cost creative experience for youth and families, especially those
-                            impacted by foster care, incarceration, and community trauma. This 10+ city tour is a
-                            storytelling and wellness experiment to center Black joy, emotional healing, and personal
-                            expression.</p>
+            <div class="container">
+                <div
+                    style="max-width: 1000px; width: 100%; margin: 0 auto; background-color: #ffffff; padding: 32px 24px; position: relative;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200px; height: 300px; background: linear-gradient(#FFFFFF, #2C861C); filter: blur(200px);  border-radius: 50%;">
                     </div>
                     <div>
-                        <h1>tour host</h1>
-                        <p>Brittany Frizzelle- author, educator, and creative wellness coach</p>
-                        <div>
-                            <h1>each city stop will host</h1>
-                            <ul>
-                                <li>A Black-owned bookstore events</li>
-                                <li>A free writing workshops at public libraries</li>
-                                <li>A creative wellness masterclasses for youth in need</li>
-                            </ul>
+                        <h1 class="text-40-700-48 capitalize">So what is the creative impact tour?</h1>
+                        <p class="text-18-400-27 pt-18">A nationwide free and low-cost creative experience for youth and
+                            families, especially those
+                            impacted
+                            by foster care, incarceration, and community trauma. This 10+ city tour is a storytelling
+                            and
+                            wellness experiment to center Black joy, emotional healing, and personal expression.</p>
+                        <div class="flex items-start justify-between pt-32">
+                            <div>
+                                <h1 class="capitalize text-40-700-48">tour host</h1>
+                                <p class="pt-18">Brittany Frizzelle- author, educator, and creative wellness coach</p>
+
+                                <div class="pt-32">
+                                    <h1 class="capitalize text-40-700-48">each city stop will host</h1>
+                                    <ul class="pt-18 list-items">
+                                        <li><i class="fa-solid fa-circle-check icon-primary"></i> A Black-owned
+                                            bookstore
+                                            events</li>
+                                        <li><i class="fa-solid fa-circle-check icon-primary"></i> A free writing
+                                            workshops
+                                            at public libraries</li>
+                                        <li><i class="fa-solid fa-circle-check icon-primary"></i> A creative wellness
+                                            masterclasses for youth in need</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="lg-block">
+                                <div class="w-300">
+                                    <img src="assets/img/hostTour.jpg" alt=""
+                                        style="width: 100; height: auto; opacity: 0.17;">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <img src="assets/img/hostTour.jpg" alt="">
                 </div>
             </div>
+
+
+
+            <div class="container">
+                <div
+                    style="max-width: 1000px; width: 100%; margin: 0 auto; background-color: #ffffff; padding: 32px 24px; position: relative;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200px; height: 300px; background: linear-gradient(#FFFFFF, #2C861C); filter: blur(200px);  border-radius: 50%;">
+                    </div>
+                    <div>
+                        <h1 class="text-40-700-48 capitalize">why pledge $1?</h1>
+                        <p class="text-18-400-27 pt-18">Because <strong>WORD OF MOUTH WORKS</strong>-it tells
+                            Kickstarter—and the world—that this campaign matters. <br> <br>
+                            Kickstarter is the crowdfunding site hosting our campaign! It LOVES when people show up
+                            on Day 1. Just $1 boosts our ranking and can get us featured, bringing more eyes and more
+                            possibility for success!
+                        </p>
+                        <div class="flex items-start justify-between pt-32">
+                            <div>
+                                <h1 class="capitalize text-40-700-48">when you pledge now:</h1>
+                                <p class="pt-18">You’ll get the <strong>first peak</strong> on Launch Day! <br>
+                                    And <strong>early backer exclusives <br>AND </strong> you’ll show other potential
+                                    funders that projects like this are important and worth the support!</p>
+
+                                <div class="pt-32">
+                                    <h1 class="capitalize text-40-700-48">exclusive for early backer</h1>
+                                    <p class="text-18-400-27 pt-18">The first 72 hours of launch are CRUCIAL! Upgrade
+                                        before then and get:</p>
+                                    <ul class="pt-18 list-items">
+                                        <li><i class="fa-solid fa-circle-check icon-primary"></i> A curated Creative
+                                            Tour Playlist</li>
+                                        <li><i class="fa-solid fa-circle-check icon-primary"></i> A behind-the-scenes
+                                            digital postcard before and while on the trip</li>
+                                        <li><i class="fa-solid fa-circle-check icon-primary"></i> A personal thank-you
+                                            note from Brittany & shout outs on all Unlearn 2 Relearn Platforms!</li>
+                                    </ul>
+                                    <p class="text-18-400-27 pt-18">+ the original gift from your reward tier!</p>
+
+                                </div>
+                            </div>
+                            <div class="lg-block">
+                                <div class="" style="margin-top: 200px;">
+                                    <img src="assets/img/logoWithoutDesign.png" alt="" class="rotate--90"
+                                        style="width: 100; height: auto; opacity: 0.17;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div
+                    style="max-width: 1000px; width: 100%; margin: 0 auto; background-color: #ffffff; padding: 32px 24px; position: relative;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 220px; background: linear-gradient(#FFFFFF, #2C861C); filter: blur(110px);  border-radius: 50%;">
+                    </div>
+                    <div>
+                        <h1 class="text-40-700-48 capitalize">what people are saying</h1>
+                        <p class="text-18-400-27 pt-18">"B led us through exercises that allowed us to write and share
+                            without judgment and it felt like we are all getting unblocked together.”
+                        </p>
+                        <p class="text-18-500-27 pt-18" style="color: var(--primary); font-style: italic;"><img
+                                src="assets/img/Line 1.png" alt="">Yoly, Workshop participant
+                        </p>
+                        <div class="flex items-start justify-between pt-32">
+                            <div>
+                                <p class="pt-18">"I learn so much from you with every post!”</p>
+                                <p class="text-18-500-27 pt-18" style="color: var(--primary); font-style: italic;"><img
+                                        src="assets/img/Line 1.png" alt="">Hannah, Substack member
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div
+                    style="max-width: 1000px; width: 100%; margin: 0 auto; background-color: #ffffff; padding: 32px 24px; position: relative;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200px; height: 330px; background: linear-gradient(#FFFFFF, #2C861C); filter: blur(200px);  border-radius: 50%;">
+                    </div>
+                    <div>
+                        <div class="flex items-start justify-between ">
+                            <div>
+                                <h1 class="capitalize text-40-700-48">Official Launch</h1>
+                                <p class="pt-18 text-18-700-27">
+                                    <strong>August 1, 2025  <br><br> 8:00am Eastern Time</strong>
+                                </p>
+
+                                <p class="pt-32 text-18-400-27">Your $1 pledge now helps us kick things off with a bang!
+                                </p>
+
+                                <div class="pt-32">
+                                    <h4 class="capitalize text-18-700-27 uppercase">READY TO PLEDGE?</h4>
+                                    <ul class="pt-18 list-items">
+                                        <li style="display: flex; align-items: center; gap: 8px;">
+                                            <p
+                                                style="padding: 4px; width: 18px; height: 18px; border: 1px solid var(--primary); border-radius: 12px; text-align: center; line-height: 10px; font-size: 14px; font-weight: 400;">
+                                                1
+                                            </p>
+                                            <span class="text-18-700-27">Click the button below</span>
+                                        </li>
+                                        <li style="display: flex; align-items: center; gap: 8px;">
+                                            <p
+                                                style="padding: 4px; width: 18px; height: 18px; border: 1px solid var(--primary); border-radius: 12px; text-align: center; line-height: 10px; font-size: 14px; font-weight: 400;">
+                                                2
+                                            </p>
+                                            <span class="text-18-400-27">Select <strong class="text-18-700-27">“$1 Early
+                                                    Backer”</strong> exclusive</span>
+                                        </li>
+                                        <li style="display: flex; align-items: center; gap: 8px;">
+                                            <p
+                                                style="padding: 4px; width: 18px; height: 18px; border: 1px solid var(--primary); border-radius: 12px; text-align: center; line-height: 10px; font-size: 14px; font-weight: 400;">
+                                                3
+                                            </p>
+                                            <span class="text-18-400-27">You’re in the clurb! We Fam Now!</span>
+                                        </li>
+
+                                    </ul>
+                                    <p class="text-18-400-27 pt-18">We’ll be back on launch day to remind you to upgrade
+                                        to a full reward tier. <br><br> <strong class="text-18-700-27">PLEDGE $1 NOW ON
+                                            KICKSTARTER</strong></p>
+
+                                </div>
+                            </div>
+                            <div class="lg-block">
+                                <div class="w-400">
+                                    <img src="assets/img/groupPic.jpg" alt="" class="rotate--90"
+                                        style="width: 100%; height: auto; opacity: 0.17;">
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="text-40-700-48 capitalize pt-32">create the shift</h1>
+                        <p class="text-18-400-27 pt-18">This is more than a tour—it’s a cultural experiment for
+                            creativity and care. <br><br> Pledge $1 today. Tell 3 friends! Let’s sprinkle creativity up,
+                            down, and all around this nation!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div
+                    style="max-width: 1000px; width: 100%; margin: 0 auto; background-color: #ffffff; padding: 32px 24px; position: relative;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 220px; background: linear-gradient(#FFFFFF, #2C861C); filter: blur(110px);  border-radius: 50%;">
+                    </div>
+                    <div>
+                        <div class="profile-section">
+                            <!-- Avatar -->
+                            <div style="width: 352px; height: 337px; flex-shrink: 0;">
+                                <img src="assets/img/avater.jpg" alt="Avatar"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+
+                            <!-- Content -->
+                            <div>
+                                <p class="text-18-500-27 italic" style="color: var(--primary);">
+                                    <img src="assets/img/Line 1.png" alt="Decorative line" class="inline-block mr-2">
+                                    Yoly, Workshop participant
+                                </p>
+
+                                <p class="text-18-400-27 " style="margin-top: 32px;">
+                                    A multi-genre writer, educator, and creative wellness facilitator whose work lives
+                                    at the intersection of healing and liberation.
+                                    With a JD/MS in Education and over a decade of community-based teaching, Brittany
+                                    has led storytelling programs for youth in group homes,
+                                    reentry programs, and Title 1 schools nationwide.
+                                    <br><br>
+                                    Her workshops blend ritual, resistance, and joy, offering transformative spaces for
+                                    writing, reflection, and renewal.
+                                    She is the author of a poetry collection on mental health, a children’s book on
+                                    student-teacher bonds,
+                                    and the host of a podcast exploring creative accountability.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div
+                    style="max-width: 1000px; width: 100%; margin: 0 auto; background-color: #ffffff; padding: 32px 24px; position: relative;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200px; height: 300px; background: linear-gradient(#FFFFFF, #2C861C); filter: blur(200px);  border-radius: 50%;">
+                    </div>
+                    
+                    <div style="position: absolute; top: 50%; left: 60%; transform: translate(-50%, -50%); width: 400px; height: 338px; background-image: url('assets/img/holdingHand.png'); background-repeat: no-repeat; background-position: center; background-size: contain; opacity: 0.12;" class="lg-block"></div>
+
+
+                    <div>
+                        <div class="profile-section">
+                            <!-- Avatar -->
+                            <div style="width: 352px; height: 337px; flex-shrink: 0;">
+                                <img src="assets/img/join.jpg" alt="Avatar"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+
+                            <!-- Content -->
+                            <div>
+                                <p class="text-18-500-27 italic" style="color: var(--primary);">
+                                    Stay Connected
+                                </p>
+
+                                <p class="text-18-400-27 " style="margin-top: 32px;">
+                                    If you'd like to join our community and get access to resources to support the
+                                    development of your Freedomland through creative accountability, visit  <a
+                                        href="https://www.patreon.com/Un2RewB"
+                                        style="text-decoration: underline; text-decoration-color: var(--primary);">
+                                        <strong style="color: var(--primary);">Patreon</strong>
+                                    </a>
+                                    .
+                                    <br><br>
+                                    Unlearn 2 Relearn is a community dedicate to the personal wellness of writers and
+                                    creatives by transforming self-sabotage into soulful action through practices that
+                                    honor the body, spirit, and truth. Our offerings blend creative structure
+                                    with emotional depth, supporting you in showing up fully in your art- and your life.
+                                    <br><br>
+                                    Check out these <a
+                                        href="https://www.patreon.com/posts/free-resources-127141868?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+                                        style="text-decoration: underline; text-decoration-color: var(--primary);">
+                                        <strong style="color: var(--primary);">FREE RESOURCES</strong>
+                                    </a> to get a taste, and stick around.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="mt-10 text-18-400-27">You can support the work by becoming a paid subscriber of
+                                the Only Way Out is
+                                Expression <a href="https://brittanyfrizzelle.substack.com/"
+                                    style="text-decoration: underline; text-decoration-color: var(--primary);">
+                                    <strong style="color: var(--primary);">Substack</strong>
+                                </a> or joining a paid tier on <a href="https://www.patreon.com/Un2RewB"
+                                    style="text-decoration: underline; text-decoration-color: var(--primary);">
+                                    <strong style="color: var(--primary);">Patreon</strong>
+                                </a> with access to community,
+                                inspiration, and actionable practices for creative transformation. <br><br>
+                                Can't? That's fair. But what you can do is SHARE! With your community! If it resonates
+                                or you believe in the idea, bend someone's ear. Use this as a tool to connect to the
+                                people around you. Because that's why I do what I do. To support the personal wellness
+                                of the community. As a practice of my own agency and self determination for my own
+                                personal wellness. And I want the same for you. And all my people, too. And maybe one of
+                                my people could be you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div style="max-width: 1000px; width: 100%; margin: 0 auto; padding: 32px 24px;">
+                    <div class="flex flex-col items-center gap-6">
+                        <div
+                            style="border-bottom: 1px solid var(--primary); width: fit-content; padding-bottom: 20px; padding-left: 50px; padding-right: 50px; width: 374px;">
+                            <div style="width: 240px;">
+                                <img src="assets/img/logoWithoutDesign.png" alt=""
+                                    class="w-full h-full object-contain ">
+                            </div>
+                        </div>
+                        <div class="footer-section">
+                            <p class="text-18-400-27" style="color: #636363;">Privacy Policy</p>
+                            <div class="flex justify-center items-center gap-6">
+                                <i class="fa-brands fa-instagram"
+                                    style="border: 1px solid var(--primary); padding: 10px; border-radius: 100%; color: var(--primary);"></i>
+                                <i class="fa-brands fa-facebook-f"
+                                    style="border: 1px solid var(--primary); padding: 10px; width: 36px; display: flex; justify-content: center; align-items: center; border-radius: 100%; color: var(--primary);"></i>
+                                <i class="fa-brands fa-twitter"
+                                    style="border: 1px solid var(--primary); padding: 10px; border-radius: 100%; color: var(--primary);"></i>
+                                <i class="fa-brands fa-linkedin-in"
+                                    style="border: 1px solid var(--primary); padding: 10px; border-radius: 100%; color: var(--primary);"></i>
+                            </div>
+                            <p class="text-18-400-27" style="color: #636363;">Terms & Conditions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-
-
     </main>
+
 
 
     <footer>
