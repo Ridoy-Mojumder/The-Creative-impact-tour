@@ -101,6 +101,15 @@ ul {
 .pt-18 {
   padding-top: 18px;
 }
+.pt-16 {
+  padding-top: 16px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-24 {
+  padding-top: 24px;
+}
 
 .pt-32 {
   padding-top: 32px;
@@ -513,6 +522,9 @@ ul {
 .w-352 {
   width: 352px;
 }
+.w-380 {
+  width: 380px;
+}
 
 .w-400 {
   width: 400px;
@@ -642,7 +654,7 @@ ul {
 
 .icon-primary {
   color: var(--primary);
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 .profile-section {
@@ -675,8 +687,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
 }
 
 .social-icon:hover i {
