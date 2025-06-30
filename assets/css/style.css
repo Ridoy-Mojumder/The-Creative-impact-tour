@@ -579,6 +579,9 @@ ul {
 .rotate--90 {
   transform: rotate(-90deg);
 }
+.rotate-90 {
+  transform: rotate(90deg);
+}
 
 /* Opacity utilities */
 .opacity-10 {
