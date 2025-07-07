@@ -631,6 +631,13 @@ ul {
   padding: 0;
 }
 
+.logo {
+  position: relative;
+  height: fit-content;
+  padding-bottom: 32px;
+  padding-top: 40px;
+}
+
 .custom-bg-wrapper {
   background-position: center;
   background-repeat: no-repeat;
@@ -752,6 +759,26 @@ ul {
     flex-direction: column;
     align-items: center;
   }
+
+  .logo {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .text-64-700-77 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .text-custom-heading {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 900;
+  letter-spacing: 5%;
+}
 
   .footer-section {
     flex-direction: column;
